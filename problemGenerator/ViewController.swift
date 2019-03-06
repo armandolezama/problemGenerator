@@ -23,14 +23,7 @@ class ViewController: UIViewController {
         
         view.addSubview(viewRoja)
         
-        viewRoja.translatesAutoresizingMaskIntoConstraints = false
-        
-        topAnchor.constraint(equalTo: top).isActive = true
-        leadingAnchor.constraint(equalTo: leading).isActive = true
-        trailingAnchor.constraint(equalTo: trailing).isActive = true
-        bottomAnchor.constraint(equalTo: bottom).isActive = true
-
-    }
+     }
 
 
 }
@@ -38,6 +31,11 @@ class ViewController: UIViewController {
 extension UIView {
     func anchor (top: NSLayoutYAxisAnchor, leading: NSLayoutXAxisAnchor, trailing: NSLayoutXAxisAnchor, bottom: NSLayoutYAxisAnchor) {
         translatesAutoresizingMaskIntoConstraints = false
+        
+        topAnchor.constraint(equalTo: top).isActive = true
+        leadingAnchor.constraint(equalTo: leading).isActive = true
+        trailingAnchor.constraint(equalTo: trailing).isActive = true
+        bottomAnchor.constraint(equalTo: bottom).isActive = true 
     }
     
 }
